@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <script>
+
+            var modList = [
+
+                    {"name":"ACSE",                                          "link":"https://discord.com/channels/768163911618658344/1310890081879461968/1310892571979157505"},
+                    {"name":"NoTrackLimits",                                 "link":"https://discord.com/channels/768163911618658344/1310890081879461968/1391230957197201540"},
+                    {"name":"SwitchTracksUnlimited",                         "link":"https://discord.com/channels/768163911618658344/1310890081879461968/1386356836642459812"},
+                    {"name":"Scenery Anarchy",                               "link":"https://discord.com/channels/768163911618658344/1310890081879461968/1389224527296331940"},
+                    {"name":"TooMuchScaling",                                "link":"https://discord.com/channels/768163911618658344/1310890081879461968/1396855589715447970"},
+                    {"name":"Custom Angle Snap",                             "link":"https://discord.com/channels/768163911618658344/1310890081879461968/1399484884900384868"},
+                    {"name":"Make Vector Upload (FOV mod)",                  "link":"https://discord.com/channels/768163911618658344/1310890081879461968/1401753903208595576"},
+                    {"name":"Planet Coaster: Coaster Convert (CSV Importer)","link":"https://discord.com/channels/768163911618658344/1310890081879461968/1391243038025715823"},
+                    {"name":"Camera Offsets",                                "link":"https://discord.com/channels/768163911618658344/1310890081879461968/1410094908332708002"},
+                    {"name":"Higher Autotunnel",                             "link":"https://discord.com/channels/768163911618658344/1310890081879461968/1401592114172657735"},
+                    {"name":"HotRacer",                                      "link":"https://discord.com/channels/768163911618658344/1310890081879461968/1390846808816615505"},
+                    {"name":"Basilisk Remaster (Raptor mod)",                "link":"https://discord.com/channels/768163911618658344/1310890081879461968/1391287864045600809"},
+                    {"name":"Enigma Restraint Fix",                          "link":"https://discord.com/channels/768163911618658344/1310890081879461968/1389518148113399818"},
+                    {"name":"Zenith Restraint Fix",                          "link":"https://discord.com/channels/768163911618658344/1310890081879461968/1389570385015607326"},
+                    
+            ]
+
+            $(function(){
+                
+                var modListDiv = $("#modList")
+                
+                modList.forEach(function(item){
+                    console.log("test")
+                    modListDiv.append($(`<p><a href=${item.link}>${item.name}</a></p>`))
+                })
+
+            })
+
+        </script>
+    </head>
+    <body>
+        <h1>List of mods in public beta testing</h1>
+        <div id="modList">
+            
+        </div>
+    </body>
+</html>
